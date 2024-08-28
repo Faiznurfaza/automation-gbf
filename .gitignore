@@ -1,0 +1,5 @@
+# Ignore the entire lib directory
+lib/
+
+# Ignore IDE-specific files
+.vscode/

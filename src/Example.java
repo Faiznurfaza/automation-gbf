@@ -1,14 +1,17 @@
 import org.sikuli.script.Screen;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.FindFailed;
 
-public class Main {
+import utils.ImageChecker;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.basics.Settings;
+
+public class Example {
     public static void main(String[] args) {
         Screen screen = new Screen();
+        Settings.MoveMouseDelay = 0;
         try {
-            Pattern image = new Pattern("path/to/your/image.png");
-            screen.wait(image, 10);
-            screen.click(image);
+            screen.wait(ImageChecker.IMAGE, 10);
+            screen.click(ImageChecker.IMAGE);
         } catch (FindFailed e) {
             e.printStackTrace();
         }

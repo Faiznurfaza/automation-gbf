@@ -1,4 +1,4 @@
-package main.java.com.example.utils;
+package com.example.utils;
 
 public class Constants {
     public static final int MOUSE_DELAY = 0;

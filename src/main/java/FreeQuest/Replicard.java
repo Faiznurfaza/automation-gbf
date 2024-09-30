@@ -2,8 +2,6 @@ package FreeQuest;
 
 import org.sikuli.basics.Settings;
 import org.sikuli.script.FindFailed;
-import org.sikuli.script.Key;
-import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 
 import com.example.utils.Constants;

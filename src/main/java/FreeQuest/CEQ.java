@@ -1,9 +1,7 @@
-package Raid;
+package FreeQuest;
 
 import org.sikuli.basics.Settings;
 import org.sikuli.script.FindFailed;
-import org.sikuli.script.Key;
-import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 
 import com.example.utils.Constants;
@@ -30,9 +28,30 @@ public class CEQ {
     }
 
     private void PlayCEQ() throws FindFailed {
+        selectQuest();
+        selectSummon();
+        finishCEQ();
+    }
+
+    private void selectQuest() throws FindFailed {
+        try {
+            Thread.sleep(1200);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
         screenInstance.click(ImagePath.GWQuest150);
-        screenInstance.wait(ImagePath.Kaguya150, 15).click();
+    }
+
+    private void selectSummon() throws FindFailed {
+        System.out.println("Choosing summon");
+
+        screenInstance.wait(ImagePath.RandomSummon150).click(ImagePath.RandomSummon150);
         screenInstance.wait(ImagePath.PartyOkBTN, 15).click(ImagePath.PartyOkBTN);
+    }
+
+    private void finishCEQ() throws FindFailed {
+        System.out.println("Attack and Finishing CEQ");
+
         screenInstance.wait(ImagePath.LoadingSplash150, 15).click();
         try {
             Thread.sleep(800);
@@ -41,12 +60,5 @@ public class CEQ {
         }
         screenInstance.wait(ImagePath.YourTurn150, 15);
         screenInstance.wait(ImagePath.BackButton150, 15).click();
-
-        try {
-            Thread.sleep(600);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-
     }
 }

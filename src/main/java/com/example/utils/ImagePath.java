@@ -21,6 +21,9 @@ public class ImagePath {
         public static final Pattern BackButton150 = new Pattern(
                         getResourcePath("images/general/BackButton150.png"));
 
+        public static final Pattern RandomSummon150 = new Pattern(
+                        getResourcePath("images/general/RandomSummon150.png"));
+
         // Templates images path below
 
         // Akasha
@@ -45,4 +48,5 @@ public class ImagePath {
 
         // CEQ
         public static final Pattern Kaguya150 = new Pattern(getResourcePath("images/templates/CEQ/Kaguya150.png"));
+
 }

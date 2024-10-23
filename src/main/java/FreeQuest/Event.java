@@ -30,6 +30,7 @@ public class Event {
                     try {
                         Thread.sleep(4200000); // 1 hour 10 minutes
                         System.out.println("Break for 1 hour 10 minutes");
+                        run = 0;
                     } catch (Exception e) {
                         System.out.println(e);
                     }

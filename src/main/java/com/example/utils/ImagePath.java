@@ -49,4 +49,10 @@ public class ImagePath {
         // CEQ
         public static final Pattern Kaguya150 = new Pattern(getResourcePath("images/templates/CEQ/Kaguya150.png"));
 
+        // UBHN
+        public static final Pattern RaidTargetUbhn = new Pattern(
+                        getResourcePath("images/templates/Ubhn/RaidTargetUbhn.png"));
+        public static final Pattern UbhnPending150 = new Pattern(
+                        getResourcePath("images/templates/Ubhn/UbhnPending150.png"));
+
 }

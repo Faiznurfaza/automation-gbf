@@ -2,6 +2,7 @@ package Raid;
 
 import org.sikuli.basics.Settings;
 import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
 import org.sikuli.script.Screen;
 
 import com.example.utils.Constants;
@@ -29,14 +30,22 @@ public class Meat {
 
     private void PlayFarmMeat() throws FindFailed {
         screenInstance.click(ImagePath.GWQuest150);
-        screenInstance.wait(ImagePath.Ygg150, 15).click(ImagePath.Ygg150);
-        screenInstance.wait(ImagePath.PartyOkBTN, 15).click(ImagePath.PartyOkBTN);
-        screenInstance.wait(ImagePath.LoadingSplash150, 15).click();
-        try {
-            Thread.sleep(800);
-        } catch (Exception e) {
-            System.out.println(e);
+        while (screenInstance.exists(ImagePath.Zephy150, 2) == null) {
+            screenInstance.type(Key.PAGE_DOWN);
         }
+
+        screenInstance.click(ImagePath.Zephy150);
+        // screenInstance.wait(ImagePath.Zephy150, 15).click(ImagePath.Zephy150);
+        // screenInstance.wait(ImagePath.RandomSummon150,
+        // 15).click(ImagePath.RandomSummon150);
+        screenInstance.wait(ImagePath.PartyOkBTN, 15).click(ImagePath.PartyOkBTN);
+        // screenInstance.wait(ImagePath.FA150, 15).click(ImagePath.FA150);
+        screenInstance.wait(ImagePath.LoadingSplash150, 15).click(ImagePath.LoadingSplash150);
+        // try {
+        // Thread.sleep(1200);
+        // } catch (Exception e) {
+        // System.out.println(e);
+        // }
         screenInstance.wait(ImagePath.YourTurn150, 15);
         screenInstance.wait(ImagePath.BackButton150, 15).click();
 

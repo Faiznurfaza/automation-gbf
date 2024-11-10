@@ -7,6 +7,7 @@ import org.sikuli.script.Screen;
 
 import com.example.utils.Constants;
 import com.example.utils.ImagePath;
+import com.example.utils.Summon;
 
 public class Ubhn {
     public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class Ubhn {
     }
 
     Screen screenInstance = new Screen();
+    Summon summon = new Summon();
     int initialValue = 0;
 
     private synchronized void startRaidLoop() {
@@ -82,7 +84,7 @@ public class Ubhn {
     }
 
     private void executeUbhnFarm() throws FindFailed {
-        screenInstance.click(ImagePath.RaidBookmark);
+        screenInstance.wait(ImagePath.RaidBookmark, 15).click(ImagePath.RaidBookmark);
         selectRaid();
         selectSummon();
         executeTurn1();

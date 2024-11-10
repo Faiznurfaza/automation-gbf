@@ -38,7 +38,7 @@ public class ImagePath {
         public static final Pattern Bubz150 = new Pattern(
                         getResourcePath("images/templates/akasha/Bubz150.png"));
         public static final Pattern RaidBookmark = new Pattern(
-                        getResourcePath("images/templates/akasha/RaidBookmark.png"));
+                        getResourcePath("images/templates/akasha/RaidBookmark.png")).similar(0.9);
 
         // Farm Meat
         public static final Pattern GWQuest150 = new Pattern(getResourcePath("images/templates/GW/GWQuest150.png"));

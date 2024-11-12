@@ -34,8 +34,16 @@ public class FullAuto {
         screenInstance.click(ImagePath.GWQuest150);
         summon.selectSummon(ImagePath.Zephy150);
 
+        screenInstance.wait(ImagePath.LoadingSplash150, 15).click(ImagePath.LoadingSplash150);
+
         screenInstance.wait(ImagePath.YourTurn150, 15);
         screenInstance.wait(ImagePath.BackButton150, 15).click();
+
+        while (screenInstance.exists(ImagePath.FA150, 4) != null) {
+            screenInstance.click(ImagePath.FA150);
+            screenInstance.wait(ImagePath.YourTurn150, 15);
+            screenInstance.wait(ImagePath.BackButton150, 15).click();
+        }
 
         try {
             Thread.sleep(800);

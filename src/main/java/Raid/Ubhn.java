@@ -84,6 +84,7 @@ public class Ubhn {
     }
 
     private void executeUbhnFarm() throws FindFailed {
+        System.out.println("Starting UBHL raid...");
         screenInstance.wait(ImagePath.RaidBookmark, 15).click(ImagePath.RaidBookmark);
         selectRaid();
         selectSummon();

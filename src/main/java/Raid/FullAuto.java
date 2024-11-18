@@ -36,12 +36,13 @@ public class FullAuto {
 
         screenInstance.wait(ImagePath.LoadingSplash150, 15).click(ImagePath.LoadingSplash150);
 
-        screenInstance.wait(ImagePath.YourTurn150, 50);
+        screenInstance.wait(ImagePath.YourTurn150, 70);
         screenInstance.wait(ImagePath.BackButton150, 15).click();
 
-        while (screenInstance.exists(ImagePath.FA150, 4) != null) {
+        while (screenInstance.exists(ImagePath.FA150, 10) != null
+                || screenInstance.exists(ImagePath.LoadingSplash150, 15) != null) {
             screenInstance.click(ImagePath.FA150);
-            screenInstance.wait(ImagePath.YourTurn150, 60);
+            screenInstance.wait(ImagePath.YourTurn150, 90);
             screenInstance.wait(ImagePath.BackButton150, 15).click();
         }
 

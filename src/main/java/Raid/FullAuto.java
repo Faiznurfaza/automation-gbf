@@ -32,15 +32,15 @@ public class FullAuto {
 
     private void PlayFullAuto() throws FindFailed {
         screenInstance.click(ImagePath.GWQuest150);
-        summon.selectSummon(ImagePath.Zephy150);
+        summon.selectSummon(ImagePath.Varuna150);
 
         screenInstance.wait(ImagePath.LoadingSplash150, 15).click(ImagePath.LoadingSplash150);
 
         screenInstance.wait(ImagePath.YourTurn150, 70);
         screenInstance.wait(ImagePath.BackButton150, 15).click();
 
-        while (screenInstance.exists(ImagePath.FA150, 10) != null
-                || screenInstance.exists(ImagePath.LoadingSplash150, 15) != null) {
+        while (screenInstance.exists(ImagePath.LoadingSplash150, 15) != null
+                || screenInstance.exists(ImagePath.FA150, 10) != null) {
             screenInstance.click(ImagePath.FA150);
             screenInstance.wait(ImagePath.YourTurn150, 90);
             screenInstance.wait(ImagePath.BackButton150, 15).click();

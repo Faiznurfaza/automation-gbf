@@ -57,4 +57,7 @@ public class ImagePath {
 
         public static final Pattern Zephy150 = new Pattern(getResourcePath("images/templates/GW/Zephy150.png"));
         public static final Pattern FA150 = new Pattern(getResourcePath("images/templates/GW/FA150.png"));
+
+        public static final Pattern Levi150 = new Pattern(getResourcePath("images/templates/GW/Levi150.png"));
+        public static final Pattern Varuna150 = new Pattern(getResourcePath("images/templates/GW/Varuna150.png"));
 }

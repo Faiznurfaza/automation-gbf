@@ -45,7 +45,8 @@ public class CEQ {
     private void selectSummon() throws FindFailed {
         System.out.println("Choosing summon");
 
-        screenInstance.wait(ImagePath.RandomSummon150, 15).click(ImagePath.RandomSummon150);
+        // screenInstance.wait(ImagePath.RandomSummon150,
+        // 15).click(ImagePath.RandomSummon150);
         screenInstance.wait(ImagePath.PartyOkBTN, 15).click(ImagePath.PartyOkBTN);
     }
 

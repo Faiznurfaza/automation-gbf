@@ -67,7 +67,6 @@ public class Ubhn {
     private void selectSummon() throws FindFailed {
         System.out.println("Choosing summon");
 
-        screenInstance.click(ImagePath.RandomSummon150);
         screenInstance.wait(ImagePath.PartyOkBTN, Constants.LONG_WAIT).click(ImagePath.PartyOkBTN);
     }
 

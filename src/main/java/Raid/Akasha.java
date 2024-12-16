@@ -66,11 +66,11 @@ public class Akasha {
     private void selectSummon() throws FindFailed {
         System.out.println("Choosing summon");
 
-        while (screenInstance.exists(ImagePath.Hades150, 2) == null) {
-            screenInstance.type(Key.PAGE_DOWN);
-        }
+        // while (screenInstance.exists(ImagePath.Hades150, 2) == null) {
+        // screenInstance.type(Key.PAGE_DOWN);
+        // }
 
-        screenInstance.click(ImagePath.Hades150);
+        // screenInstance.click(ImagePath.Hades150);
         try {
             Thread.sleep(Constants.SLEEP_DURATION);
         } catch (Exception e) {

@@ -60,4 +60,23 @@ public class ImagePath {
 
         public static final Pattern Levi150 = new Pattern(getResourcePath("images/templates/GW/Levi150.png"));
         public static final Pattern Varuna150 = new Pattern(getResourcePath("images/templates/GW/Varuna150.png"));
+
+        // Automate Boxing
+        public static final Pattern BoxingBookmark = new Pattern(
+                        getResourcePath("images/templates/Boxing/BoxingBookmark.png"));
+        public static final Pattern DrawAll = new Pattern(getResourcePath("images/templates/Boxing/DrawAll.png"));
+        public static final Pattern ResultBookmark = new Pattern(
+                        getResourcePath("images/templates/Boxing/ResultBookmark.png"));
+        public static final Pattern ResetBox = new Pattern(getResourcePath("images/templates/Boxing/Reset.png"));
+        public static final Pattern OkReset = new Pattern(getResourcePath("images/templates/Boxing/OkReset.png"));
+        public static final Pattern ConfirmedReset = new Pattern(
+                        getResourcePath("images/templates/Boxing/ConfirmedReset.png"));
+
+        // Crate
+        public static final Pattern PickAll = new Pattern(getResourcePath("images/templates/Crate/PickAll.png"));
+        public static final Pattern OkButton = new Pattern(getResourcePath("images/templates/Crate/OkButton.png"));
+
+        // Halo
+        public static final Pattern LoadingSplashHalo = new Pattern(
+                        getResourcePath("images/templates/CEQ/LoadingSplashHalo.png"));
 }

@@ -67,7 +67,7 @@ public class Ubhn {
     private void selectSummon() throws FindFailed {
         System.out.println("Choosing summon");
 
-        screenInstance.wait(ImagePath.PartyOkBTN, Constants.LONG_WAIT).click(ImagePath.PartyOkBTN);
+        screenInstance.wait(ImagePath.PartyOkBTN, Constants.SHORT_WAIT).click(ImagePath.PartyOkBTN);
     }
 
     private void executeTurn1() throws FindFailed {

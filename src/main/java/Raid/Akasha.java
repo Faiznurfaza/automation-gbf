@@ -15,7 +15,7 @@ public class Akasha {
     }
 
     Screen screenInstance = new Screen();
-    int initialValue = 1;
+    int initialValue = 0;
 
     private synchronized void startRaidLoop() {
         Settings.MoveMouseDelay = Constants.MOUSE_DELAY;
@@ -23,6 +23,8 @@ public class Akasha {
         while (true) {
             try {
                 executeAkashaRaid();
+                initialValue++;
+                System.out.println("Akasha raid completed: " + initialValue);
             } catch (FindFailed e) {
                 System.out.println("Failed to find an element. Restarting..");
             }
@@ -71,12 +73,12 @@ public class Akasha {
         // }
 
         // screenInstance.click(ImagePath.Hades150);
-        try {
-            Thread.sleep(Constants.SLEEP_DURATION);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        screenInstance.wait(ImagePath.PartyOkBTN, Constants.LONG_WAIT).click(ImagePath.PartyOkBTN);
+        // try {
+        // Thread.sleep(Constants.SLEEP_DURATION);
+        // } catch (Exception e) {
+        // System.out.println(e);
+        // }
+        screenInstance.wait(ImagePath.PartyOkBTN, Constants.SHORT_WAIT).click(ImagePath.PartyOkBTN);
     }
 
     private void executeTurn1() throws FindFailed {

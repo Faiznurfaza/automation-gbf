@@ -9,17 +9,18 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [Notes](#notes)
-  - [License](#license)
+    - [Troubleshooting](#troubleshooting)
 
 ## Description
 
-This is my personal Automation tools for [Granblue Fantasy](http://game.granbluefantasy.jp) web browser game.
+This is my personal Automation tool for [Granblue Fantasy](http://game.granbluefantasy.jp) web browser game.
 
 ## Prerequisites
 
 - Windows
 - JRE 8 or higher
 - JDK 18 or higher
+- VSCode or any IDE that can run Java files.
 
 ## Installation
 
@@ -50,12 +51,21 @@ To use this automation tool:
    ![Zoom 150%](images/Example_3.png)
    ![Final looks](images/Example_4.png)
 5. In your IDE, run the Java file and let the program automate the task for you.
+6. To stop it, just force click your mouse to your VScode (if using vscode) and press `SHIFT+F5`.
 
 ## Notes
 
-- In some files, the program will run endlessly until a captcha appears
+- In some files, the program will run endlessly until a captcha appears.
 - Some will run until a specified number of repetitions.
+- You need to adjust the code to fit your farm setup. For example, in `src\main\java\Raid\Akasha.java`, I'm using a 2-turn FA Refresh setup.
+- Don't forget to: Turn off live battle feed, and turn on one-touch pre-battle auto attack.
+- If you already ran the program but your mouse didn't click anything, try this:
+  1. Check the file name in this folder `src\main\resources\images`, and make sure it's the same as in the original repository.
+  2. Try zooming the browser to 150%.
+  3. Re-screenshot the image.
 
-## License
+### Troubleshooting
 
-This project is licensed under the MIT License.
+- **Mouse not clicking**: Ensure the image paths are correct and the browser zoom is set to 150%.
+- **Program not stopping**: Force click your mouse to your IDE and press `SHIFT+F5`.
+- **Image not found**: Re-screenshot the image and replace the existing one in the `src/main/resources/images` folder.

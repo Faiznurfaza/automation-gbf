@@ -79,4 +79,12 @@ public class ImagePath {
         // Halo
         public static final Pattern LoadingSplashHalo = new Pattern(
                         getResourcePath("images/templates/CEQ/LoadingSplashHalo.png"));
+
+        // Raid Event
+        public static final Pattern Shenxian = new Pattern(
+                        getResourcePath("images/templates/event/Shenxian.png"));
+        public static final Pattern PendingShenxian = new Pattern(
+                        getResourcePath("images/templates/event/PendingShenxian.png"));
+        public static final Pattern RaidEvent = new Pattern(
+                        getResourcePath("images/templates/event/RaidEvent.png"));
 }

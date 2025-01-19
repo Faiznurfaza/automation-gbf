@@ -32,7 +32,8 @@ public class FullAuto {
 
     private void PlayFullAuto() throws FindFailed {
         screenInstance.click(ImagePath.GWQuest150);
-        summon.selectSummon(ImagePath.Varuna150);
+        // summon.selectSummon(ImagePath.Varuna150);
+        screenInstance.wait(ImagePath.PartyOkBTN, 15).click(ImagePath.PartyOkBTN);
 
         screenInstance.wait(ImagePath.LoadingSplash150, 15).click(ImagePath.LoadingSplash150);
 

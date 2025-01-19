@@ -27,8 +27,8 @@ This is my personal Automation tool for [Granblue Fantasy](http://game.granbluef
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/Faiznurfaza/automation-tools-gbf.git
-   cd automation-tools-gbf
+   git clone https://github.com/Faiznurfaza/automation-gbf.git
+   cd automation-gbf
    ```
 
 2. Build the project using Maven:
